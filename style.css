@@ -1,0 +1,13 @@
+#From {
+    border: 10px solid rgb(78, 161, 206);
+}
+#To {
+    border: 10px solid rgb(78, 161, 206);
+    margin: 10px;
+}
+*{
+    font-size: 1.1em;
+}
+#SUM{
+    margin-bottom: 10px;
+}
