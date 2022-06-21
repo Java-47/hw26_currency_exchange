@@ -1,8 +1,9 @@
 const base_url = 'http://data.fixer.io/api/';
 const key = '24a0b8891c38e8dad587364f5abb0819';
+
 let ratesObj = {
 }
-From = document.getElementById('From')
+
 fetch(`${base_url}/latest?access_key=${key}`)
 .then(response => {
     if (response.ok) {
@@ -13,9 +14,7 @@ fetch(`${base_url}/latest?access_key=${key}`)
 })
 .then(data => {
     const keys = Object.keys(data.rates);
-    console.log(data.rates)
     ratesObj = Object.assign({}, data.rates);
-    console.log(ratesObj)
     keys.forEach(e => {
         const option = document.createElement('option');
         option.setAttribute('value', e);
